@@ -1,3 +1,4 @@
+cat > client/src/App.tsx << 'EOF'
 import './styles/theme.css';
 
 export default function App() {
@@ -148,19 +149,19 @@ export default function App() {
           <label style={{fontSize: '14px', fontWeight: 600, marginBottom: '12px', display: 'block'}}>Select Data Fields</label>
           <div className="checkbox-grid">
             <label className="checkbox-label">
-              <input type="checkbox" checked /> Temperature
+              <input type="checkbox" defaultChecked /> Temperature
             </label>
             <label className="checkbox-label">
-              <input type="checkbox" checked /> Humidity
+              <input type="checkbox" defaultChecked /> Humidity
             </label>
             <label className="checkbox-label">
-              <input type="checkbox" checked /> Wind Speed
+              <input type="checkbox" defaultChecked /> Wind Speed
             </label>
             <label className="checkbox-label">
-              <input type="checkbox" checked /> Wind Direction
+              <input type="checkbox" defaultChecked /> Wind Direction
             </label>
             <label className="checkbox-label">
-              <input type="checkbox" checked /> Pressure
+              <input type="checkbox" defaultChecked /> Pressure
             </label>
             <label className="checkbox-label">
               <input type="checkbox" /> Rainfall
@@ -185,3 +186,4 @@ export default function App() {
     </div>
   );
 }
+EOF
